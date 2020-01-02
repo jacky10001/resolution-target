@@ -41,6 +41,7 @@ end
 toc
 
 figure(1),imagesc(target),colormap gray,axis image
+imwrite(target, 'image\target_02.jpg')
 
 
 function [lw,ll] = compute_width(tG,tE,dx)

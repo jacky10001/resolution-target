@@ -33,6 +33,8 @@ target(...
     round(tune_x-xc/2+1):round(tune_x+xc/2)) = t3 ;
 
 figure(9),imagesc(target),colormap gray,axis image
+
+imwrite(target, 'image\target_03.jpg')
 %%
 function [lw,ll] = compute_width(tG,tE,dx)
     lp = 2^(tG+(tE-1)/6) ;
